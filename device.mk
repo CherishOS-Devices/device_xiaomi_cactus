@@ -67,6 +67,10 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhidltransport
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.certus
+
 # KPOC
 PRODUCT_PACKAGES += \
     libsuspend
