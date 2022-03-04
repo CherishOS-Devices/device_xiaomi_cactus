@@ -52,7 +52,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    
+    GcamGo
 
 # KPOC
 PRODUCT_PACKAGES += \
