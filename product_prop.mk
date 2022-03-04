@@ -7,6 +7,10 @@ PRODUCT_PRODUCT_PROPERTIES  += \
    ro.config.system_vol_steps=15 \
    ro.config.ring_notification_vol_steps=15
 
+# Display
+PRODUCT_PRODUCT_PROPERTIES  += \
+   ro.sf.lcd_density=320
+
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES  += \
     debug.sf.enable_gl_backpressure=1
