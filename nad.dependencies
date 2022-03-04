@@ -1,13 +1,13 @@
 [
   {
         "remote": "github",
-        "repository": "kbt69/android_kernel_xiaomi_mt6765",
+        "repository": "ninjapika/android_kernel_xiaomi_mt6765",
 	"target_path": "kernel/xiaomi/mt6765",
 	"branch": "10-alps"
   },
   {
 	"remote": "github",
-	"repository": "kbt69/proprietary_vendor_xiaomi",
+	"repository": "ninjapika/android_vendor_xiaomi",
 	"target_path": "vendor/xiaomi",
 	"branch": "11-alps"
   },
