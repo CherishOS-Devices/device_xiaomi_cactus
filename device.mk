@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GcamGo
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhwbinder
+
 # KPOC
 PRODUCT_PACKAGES += \
     libsuspend
