@@ -64,7 +64,8 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    libhwbinder
+    libhwbinder \
+    libhidltransport
 
 # KPOC
 PRODUCT_PACKAGES += \
