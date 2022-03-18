@@ -77,16 +77,6 @@ ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 endif
 
-# IMS
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
-
 # Init
 PRODUCT_PACKAGES += \
     fstab.enableswap \
@@ -154,4 +144,4 @@ PRODUCT_PACKAGES += \
 
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/xiaomi/mt6765-common/mt6765-common-vendor.mk)
-
+$(call inherit-product, vendor/mediatek-ims/ims-vendor.mk)
