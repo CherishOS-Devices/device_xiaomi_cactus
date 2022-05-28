@@ -75,6 +75,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 # Kernel toolchains
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-gnueabihf-
 KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-linux-gnueabihf-7.5/bin
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # Lineage hardware
 BOARD_HARDWARE_CLASS += \
