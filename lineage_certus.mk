@@ -18,17 +18,33 @@
 $(call inherit-product, device/xiaomi/certus/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Official tag
-NAD_BUILD_TYPE := OFFICIAL
+# maintainer flag
+RICE_MAINTAINER := Chikoni_UwU
+
+# gapps build flag, if not defined build type is vanilla
+# GAPPS package is similar to core gapps
+WITH_GAPPS := false
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := false
+
+# UDFPS ICONS/ANIMATIONS
+TARGET_HAS_UDFPS := true
+
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Boot animaton
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := certus
-PRODUCT_NAME := nad_certus
+PRODUCT_NAME := lineage_certus
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi 6 / Redmi 6A
 PRODUCT_MANUFACTURER := Xiaomi
