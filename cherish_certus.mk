@@ -18,14 +18,13 @@
 $(call inherit-product, device/xiaomi/certus/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-# maintainer flag
-RICE_MAINTAINER := Chikoni_UwU
 
-# gapps build flag, if not defined build type is vanilla
-# GAPPS package is similar to core gapps
-WITH_GAPPS := false
+
+
+# Import vendor/lawnchair/lawnchair.mk
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
 # disable/enable blur support, default is false
 TARGET_ENABLE_BLUR := false
@@ -44,7 +43,13 @@ TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := certus
-PRODUCT_NAME := lineage_certus
+PRODUCT_NAME := cherish_certus
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi 6 / Redmi 6A
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Cherish_Magic
+CHERISH_BUILD_TYPE := OFFICIAL
+CHERISH_VANILLA := true
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Chikoni_UwU
