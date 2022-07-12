@@ -20,9 +20,6 @@ $(call inherit-product, device/xiaomi/certus/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-
-
-
 # Import vendor/lawnchair/lawnchair.mk
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
@@ -49,7 +46,7 @@ PRODUCT_MODEL := Redmi 6 / Redmi 6A
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Cherish_Magic
-CHERISH_BUILD_TYPE := OFFICIAL
+# CHERISH_BUILD_TYPE := OFFICIAL
 CHERISH_VANILLA := true
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cherish.maintainer=Chikoni_UwU
