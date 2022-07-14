@@ -23,4 +23,9 @@
 	"target_path": "vendor/mediatek-ims",
 	"branch": "12"
   }
+  {
+        "remote": "github",
+        "repository": "qwertyuiii-code/vendor_lawnchair",
+        "target_path": "vendor/lawnchair",
+        "branch": "12.x"
 ]
