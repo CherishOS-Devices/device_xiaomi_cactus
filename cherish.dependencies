@@ -1,31 +1,25 @@
 [
   {
         "remote": "github",
-        "repository": "ninjapika/android_kernel_xiaomi_mt6765",
+        "repository": "qwertyuiii-code/android_kernel_xiaomi_mt6765",
 	"target_path": "kernel/xiaomi/mt6765",
 	"branch": "10-alps"
   },
   {
 	"remote": "github",
-	"repository": "ninjapika/android_vendor_xiaomi",
+	"repository": "qwertyuiii-code/android_vendor_xiaomi",
 	"target_path": "vendor/xiaomi",
-	"branch": "11-alps"
-  },
-  {
-	"remote": "github",
-	"repository": "kbt69/libaptX",
-	"target_path": "external/libaptx",
-	"branch": "main"
+	"branch": "12"
   },
   {
         "remote": "github",
-        "repository": "wulan17/linaro_arm-linux-gnueabihf-7.5",
+        "repository": "qwertyuiii-code/linaro_arm-linux-gnueabihf-7.5",
         "target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-gnueabihf-7.5",
         "branch": "master"
   },
   {
 	"remote": "github",
-	"repository": "ninjapika/vendor_mediatek-ims",
+	"repository": "qwertyuiii-code/vendor_mediatek-ims",
 	"target_path": "vendor/mediatek-ims",
 	"branch": "12"
   }
