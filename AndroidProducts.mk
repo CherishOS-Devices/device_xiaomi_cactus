@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_certus.mk
+    $(LOCAL_DIR)/cherish_cactus.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_certus-user \
-    cherish_certus-userdebug \
-    cherish_certus-eng
+    cherish_cactus-user \
+    cherish_cactus-userdebug \
+    cherish_cactus-eng

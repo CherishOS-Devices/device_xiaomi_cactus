@@ -15,7 +15,7 @@
 #
 
 # Inherit from device
-$(call inherit-product, device/xiaomi/certus/device.mk)
+$(call inherit-product, device/xiaomi/cactus/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
@@ -23,26 +23,14 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 # Import vendor/lawnchair/lawnchair.mk
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
-# disable/enable blur support, default is false
-TARGET_ENABLE_BLUR := false
-
-# UDFPS ICONS/ANIMATIONS
-TARGET_HAS_UDFPS := true
-
-# Quick tap feature
-TARGET_SUPPORTS_QUICK_TAP := true
-
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
 # Boot animaton
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := certus
-PRODUCT_NAME := cherish_certus
+PRODUCT_NAME := cherish_cactus
 PRODUCT_BRAND := xiaomi
-PRODUCT_MODEL := Redmi 6 / Redmi 6A
+PRODUCT_MODEL := Redmi 6A
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Cherish_Magic
